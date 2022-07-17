@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scripts/day2.rpy", line 222, in script
+    $ renpy.save (u"Камень", "Камень")
+  File "game/scripts/day2.rpy", line 222, in <module>
+    $ renpy.save (u"Камень", "Камень")
+PicklingError: Can't pickle <type 'function'>: attribute lookup __builtin__.function failed
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/scripts/day2.rpy", line 222, in script
+    $ renpy.save (u"Камень", "Камень")
+  File "D:\Renpy\renpy-7.1.3-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Renpy\renpy-7.1.3-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/scripts/day2.rpy", line 222, in <module>
+    $ renpy.save (u"Камень", "Камень")
+  File "D:\Renpy\renpy-7.1.3-sdk\renpy\loadsave.py", line 419, in save
+    six.reraise(t, e, tb)
+  File "D:\Renpy\renpy-7.1.3-sdk\renpy\loadsave.py", line 405, in save
+    dump((roots, renpy.game.log), logf)
+  File "D:\Renpy\renpy-7.1.3-sdk\renpy\loadsave.py", line 49, in dump
+    cPickle.dump(o, f, cPickle.HIGHEST_PROTOCOL)
+PicklingError: Can't pickle <type 'function'>: attribute lookup __builtin__.function failed
+
+Windows-7-6.1.7601-SP1
+Ren'Py 7.3.5.606
+Empty 1.0
+Sun Jun 14 16:53:41 2020

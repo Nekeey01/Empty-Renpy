@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/testoviy.rpy", line 1: expected statement.
+    def create_file():
+                   ^
+
+Ren'Py Version: Ren'Py 7.0.0.196
+Sun Jan 06 01:58:41 2019
